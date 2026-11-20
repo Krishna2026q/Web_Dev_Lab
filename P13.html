@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Krishna Dhanore | Portfolio</title>
+
+    <style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5;
+    color: black;
+}
+
+header {
+    background-color: #1a0000;
+    color: #ff3333;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3333;
+    transform: translateY(-3px);
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 40px;
+}
+
+.home div {
+    flex: 1 1 350px;
+    max-width: 650px;
+}
+
+.home h1 {
+    font-size: 38px;
+}
+
+.home span {
+    color: #cc0000;
+}
+
+.home p {
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    background-color: #990000;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #660000;
+    transform: translateY(-4px);
+}
+
+.home img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #990000;
+    transition: 0.4s;
+}
+
+.home img:hover {
+    transform: scale(1.08);
+}
+
+.about {
+    text-align: center;
+    padding: 50px 40px;
+    line-height: 1.8;
+}
+
+#skills {
+    background-color: #1a0000;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skills-list span {
+    background-color: #ff3333;
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.skills-list span:hover {
+    background-color: white;
+    color: #990000;
+    transform: translateY(-7px);
+    box-shadow: 0 5px 15px rgba(255, 51, 51, 0.3);
+}
+
+.projects {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 32px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.project-card {
+    background-color: white;
+    border: 2px solid #cc0000;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 0 1 320px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.project-card h3 {
+    color: #b30000;
+    font-size: 22px;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(153, 0, 0, 0.2);
+    border-color: black;
+}
+
+.contact {
+    background-color: #ff3333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    line-height: 1.8;
+}
+
+.contact .button {
+    background-color: #1a0000;
+    color: white;
+}
+
+footer {
+    background-color: #1a0000;
+    color: #ff3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .project-card {
+        flex: 1 1 100%;
+    }
+
+    .about {
+        padding: 35px 20px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div>
+            <h1>Hi, I'm <span>Krishna Dhanore</span></h1>
+
+            <h2>Student | Aspiring Software Developer</h2>
+
+            <p>
+                I am a passionate student at Bosscoder School of Technology,
+                enthusiastic about technology, programming and building
+                innovative solutions.
+            </p>
+
+            <a href="#projects" class="button">View My Work</a>
+        </div>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwwbbT_D-Gpr9-4oTWl1qKoI7n49wUrxiFv3M937bdnbyM4wUZo-FVWIe&s=10"
+             alt="Krishna's profile picture">
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm Krishna Dhanore, a passionate student at
+            Bosscoder School of Technology, aspiring to become a
+            skilled software developer. I enjoy exploring new
+            technologies, learning programming and building
+            projects that solve real-world problems.
+        </p>
+
+        <p>
+            I am always looking for opportunities to improve
+            my technical skills and gain practical experience.
+            My goal is to become a proficient developer and
+            create impactful applications.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-list">
+
+            <div class="project-card">
+                <h3>FloodGaurd</h3>
+
+                <p>
+                    A smart flash flood early warning system
+                    designed to monitor water levels and rainfall
+                    and provide alerts during dangerous situations.
+                </p>
+
+                <p><b>Technologies:</b> HTML, CSS, JavaScript, IoT</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in connecting or working together?
+            Feel free to reach out!
+        </p>
+
+        <p>Email: dheerajdhanore@gmail.com</p>
+
+        <a href="https://github.com/Krishna2026q" class="button">
+            GitHub
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Krishna Dhanore. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
